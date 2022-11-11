@@ -7,7 +7,7 @@
 - How to display a blank (making all the segments off)
 - How to test the inputs LT (lamp test), ripple blanking input (RBI) and blanking input / ripple blanking output (BI/RBO) of TTL 7447 BCD-to-7-segment decoder
 - How to blank out the leading 0s in a multiple digit display
-           <!--<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>-->
+          
 
 ### Theory
 
