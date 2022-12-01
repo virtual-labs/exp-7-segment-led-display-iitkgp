@@ -1,4 +1,4 @@
-### Procedure
+## Procedure
 
 #### Please follow these steps to do the experiment.
 ## Part 1:
