@@ -1,0 +1,386 @@
+<!-- This file needs to be edited by the lab developer to suit the requirements of their lab in particular.-->
+<!-- Add class="default" to include any element as it is specified in default.html. Do not include class="default" to the elements that you want to edit -->
+<!DOCTYPE html>
+<html>
+    <head><script language="javascript" type="text/javascript" src="js/a.js"></script>
+        <title>Test Lab title</title>
+    </head>
+
+    <body>
+        <div id="experiment">
+            <!-- The Experiment Document Container-->
+            <!-- The lab Header contains the logo and the name of the lab, usually displayed on the top of the page-->
+
+            <header class="default" id="experiment-header">
+
+                <div class="logo" id="experiment-header-logo">
+                    <!-- Enclose the logo image of your lab or write it in text-->
+                    <img src="images/logo.jpg"></div>
+
+                <div class="heading" id="experiment-header-heading">
+                    <!-- Write the name of your lab and link it to the home 
+          page of your lab (h1 tag is preferred while writing your 
+          lab name)-->
+                    <a href="../index.html">Digital Electronic Circuits</a>
+                </div><!-- Add any additional element you want to add to the lab 
+        header, For example : Help (Enclosing them with suitable 
+        div is recommended)-->
+            </header><!-- The lab article is the main content area where all the experiment content sits-->
+
+            <article id="experiment-article">
+                <!-- The lab article has an header, optional navigational 
+        menu, number of sections, an optional sidebar and a closing 
+        footer-->
+
+                <div class="breadcrumb" id="experiment-article-breadcrumb"></div>
+
+                <header class="heading" id="experiment-article-heading">
+                    Analysis of Functions of BCD-TO-7-segment Decoder / Driver and Operation of 7-segment LED Display
+                </header><!-- Navigation menu is useful to organize the view of multiple sections inside the article-->
+
+                <nav class="default" id="experiment-article-navigation">
+                    <ul id="experiment-article-navigation-menu">
+                        <!-- The menu can be dynamically generated to contain 
+              the headings of your sections or instead write the 
+              menu items of your choice individually enclosedu in 
+              &lt;li&gt; tag as shown below-->
+                    </ul>
+                </nav><!-- All the sections of your lab or experiment can be 
+          enclosed together with a div element as shown below-->
+
+                <div id="experiment-article-sections">
+                    <!------------------------------- First section of the article---------------------------------->
+
+                    <section id="experiment-article-section-1">
+                        <div class="icon" id="experiment-article-section-1-icon">
+                            <!-- Enclose the icon image of your lab -->
+                            <img src="images/introduction.jpg"></div>
+                        <!-- The heading for the section can be enclosed in a div tag. -->
+
+                        <div class="heading" id="experiment-article-section-1-heading">
+                            Introduction
+                        </div><!-- Write the section content inside a paragraph element, You can also include images with &lt;img&gt; tag -->
+
+                        <div class="content" id="experiment-article-section-1-content">                            
+                            <p><b>About the Experiment</b></p>
+                <br />
+                This experiment enables a student to learn
+                <ul>
+                    <li>	How to display decimal numbers  0-9 on a 7-segment LED display</li>
+                    <li>	How to display a blank (making all the segments off)</li>
+                    <li>	How to test the inputs LT (lamp test),  ripple blanking input (RBI) and blanking input / ripple blanking output (BI/RBO) of TTL 7447 BCD-to-7-segment decoder</li>
+                    <li>    How to blank out the leading 0s in a multiple digit display </li>
+                </ul>
+                
+                                            
+                        </div>
+                    </section>
+                    <!-------------------------- Second section of the article---------------------------------------->
+
+                    <section id="experiment-article-section-2">
+                        <div class="icon" id="experiment-article-section-2-icon">
+                            <!-- Enclose the icon image of your lab. -->
+                            <img src="images/theory.jpg"></div>
+                        <!-- The heading for the section can be enclosed in a div tag. -->
+
+                        <div class="heading" id="experiment-article-section-2-heading">
+                            Theory
+                        </div><!-- Write the section content inside a paragraph element, we can also include images with &lt;img&gt; tag -->
+
+                        <div class="content" id="experiment-article-section-2-content">                            
+                            <p>The result of a processing unit needs to be conveniently displayed to a user for its proper interpretation. The seven-segment LED display is a very common output device used to display decimal numbers. The seven segments of the display are labeled as a to g as shown in Figure 1(a). Displays representing decimal numbers from 0 to 9 are depicted in Figure 1(b).  For example, segments a, b, d, e, and g should be lit up to display decimal Of the several common seven-segment display packages available, generally the common-anode type display is predominantly used in engineering institutions. A typical 10-pin LED common-anode display package, its pin diagram and internal connections are shown in Figure 
+                            <br />
+                            <div align="center">
+                            <p float="left">
+				<img src="images/fig1.png"  style="width:500px;height:400px;"/>
+				</p> 
+                            <br />
+                            Figure 1
+                            <br />
+                             <p float="left">
+				<img src="images/fig2.png"  style="width:500px;height:400px;"/>
+				</p>
+                             <br />
+                             Figure 2(a) & 2(b)
+                            <br /><br />
+                             <p float="left">
+				<img src="images/fig3.png"  style="width:500px;height:400px;"/>
+				</p>
+                             <br />
+                             Figure 2(c)
+                             <br />
+                             <br />
+                             Fig:-2 . (a) 10 pin single-digit package    (b) pin out diagram
+(c) Internal connection of common-anode LED package
+
+                             </div>
+                            <br />
+                            
+                           It may be noted that the outputs of logic computation are normally available in binary form, which needs to be translated to seven-segment display code that causes appropriate segments on LED display to be lit up. One therefore needs a decoder in order to work with 7-segment LED display devices. Commercially available TTL 7447 BCD-to-seven segment decoder/driver, logic symbol of which is shown in Figure 3(a), can be conveniently used for controlling a common-anode type LED display device. The BCD number to be decoded is applied to the inputs D, C, B, and A.  When the lamp test input (LT) is driven low, all the segments (a to g) are made to glow as all the seven outputs a to g  go low. When the blanking input (BI) is made low, all the segments go off as all the seven outputs a to g  go high. If driven low, the ripple-blanking input (RBI) darkens the display only when DCBA=LLLL (L=LOW). When the RBI input becomes active, the BI/RBO behaves like a ripple-blanking output (RBO) and becomes low. Note that the seven outputs of 7447 IC are all active low outputs.  
+                            <br />
+                            <br />
+                            The operation of 7447 decoder/driver IC is given in complete detail by the function table shown in Figure 3(b). The decimal displays generated by the 7447 decoder are shown in Figure 3(c). figure 
+                            
+                            <br />
+                            
+                            <div align="center">
+                            <p float="left">
+				<img src="images/fig4.png"  style="width:500px;height:400px;"/>
+				</p> 
+                            <br />
+                            Figure 3(a)
+                            <br />
+                             <p float="left">
+				<img src="images/fig5.png"  style="width:500px;height:400px;"/>
+				</p>
+                             <br />
+                             Figure 3(b)
+                            <br /><br />
+                             <p float="left">
+				<img src="images/fig6.png"  style="width:300px;height:100px;"/>
+				</p>
+                             <br />
+                             Figure 3(c)
+                             <br />
+                             <br />
+                             3.(a) Logic symbol for 7447 decoder IC   (b) Function Table of 7447 decoder    (c) Display produce for different combination of D,C,B,A inputs of 7447 decoder
+                             </div>
+                            
+                            
+                        	<br /><br />
+                           It may be noted that invalid BCD inputs (corresponding to the decimal numbers 10, 11, 12, 12, 14, and 15) can produce distinct outputs through the 7447 decoder. The 7447 decoder is typically connected to a common-anode 7-segment LED display device as shown in Figure 4. The presence of the current-limiting 330 Ω resistance between the power supply and the common anode terminal of the LED block avoids the need to connect seven resistors between the outputs a-g of the decoder and the corresponding cathode terminals of the LED block.figure
+                            <br />
+                            <div align="center">
+                            <p float="left">
+				<img src="images/fig7.png"  style="width:500px;height:400px;"/>
+				</p> 
+                            
+                             </div>
+                            
+                            <br />
+                           Applications like calculator require that the leading zeros be blanked out. Figure 5 shows the use of several 7447 decoder/drivers controlling a group of six LED displays as in a cash register. The present inputs to the six decoders are shown towards the bottom of Figure 5. The current BCD input is 0000 0000 0010 0011 0100 0101 (002345 in decimal). On blanking of the two left zeros, the display should read 23.45. Blanking of the leading 0s is taken care of by connecting the RBI and RBO terminals of pairs of 7447 decoder ICs as shown in Figure 5.Inspecting from left to right in Figure 5, note that RBI input terminal of IC1 is grounded. As its BCD input is 0000, the display is blanked out. Also, the RBO output of IC1, which is made to go low, is connected to the RBI input of IC2. As BCD input of IC2 is 0000, and RBI is low, its display is also banked out. This makes RBO of IC2 low, and this low level is passed to RBI of IC3. However, as BCD input of IC3 is 0010 (non-zero), display of IC3 is not blank. Thus RBO of IC3 is high, and this high level is passed to RBI of IC4. Note that once the displays to the right of IC2 are non-blank, even if some BCD input appears as 0000, the 0 will be displayed and not blanked out, for the RBI input will not be activated due to the nature of the connections between any two neighboring ICs figure.
+                            
+                            <br />
+                            
+                            <div align="center">
+                            <p float="left">
+				<img src="images/fig8.png"  style="width:500px;height:400px;"/>
+				</p> 
+                            <br />
+                            Figure 5
+                             </div></p>                            
+                        </div>
+                    </section>
+                    <!-------------------------- Third section of the article---------------------------------------->
+
+                    <section id="experiment-article-section-3">
+                        <div class="icon" id="experiment-article-section-3-icon">
+                            <!-- Enclose the icon image of your lab. -->
+                            <img src="images/objective.jpg"></div>
+
+                        <div class="heading" id="experiment-article-section-3-heading">
+                            Objective
+                        </div>
+
+                        <div class="content" id="experiment-article-section-3-content">                            
+                            <p><b>Aim of the Experiment</b></p>
+                <br />
+               The principal objective of this experiment is to fully understand the functions of a BCD-to-7-segment decoder (IC 7447) and use it to control the operations of a common-anode 7-segment LED display.
+                           
+                        </div>
+                    </section>
+                    <!-------------------------- Fourth section of the article---------------------------------------->
+<section id="experiment-article-section-5">
+                        <div class="icon" id="experiment-article-section-5-icon">
+                            <!-- Enclose the icon image of your lab.-->
+                            <img src="images/procedure.jpg"></div>
+
+                        <div class="heading" id="experiment-article-section-5-heading">
+                            Procedure
+                        </div>
+
+                        <div class="content" id="experiment-article-section-5-content">                            
+                            <p><p>Please follow these steps to do the experiment.</p>
+                            <br />
+                            <br />
+                            
+                            <p style="font-weight:500px;">Part 1:</p>
+                         
+                        	<ol>
+                            
+                                <li class="expt1">	At first go through the 7 Segment Decoder Circuit on the virtual workspace. Now see that IC 7447 is connected to the LED display package complete with VCC, GND and current-limiting  resistor. Verify that the sixteen 7-segment patterns appear for 16 possible combinations of the 4-bit word DCBA while keeping LT (lamp test) and BI (blanking input) inputs high. Note that RBI should be kept high for displaying the 7-segment pattern for 0.</li>
+                            	<li class="expt1">	Next, applying a low level signal to BI input, verify that all segments are off irrespective of the logic level of any other input..</li>
+                                <li class="expt1">	Next,  setting RBI (ripple blanking input), D,C, B, and A to low level and setting LT input to high level, verify that all segments go off, and the RBO (ripple blanking output) output goes to a low level..</li>
+                                <li class="expt1">	Next, setting BI/RBO input to high and making LT input low, verify that all segments are lit up.</li>
+                                </ol>
+                                <br />
+                                
+                                
+                                <p style="font-weight:500px;">Part 2:</p>
+                                
+                                <ol>
+                                
+                                <li class="expt1">	See how the three instances each of 7447 decoder and common-anode LED display package, are connected, test how in case of a multiple-digit display, the leading zeros can be blanked out.</li>
+                                <li class="expt1">	Generate table 1 for showing the status (low/high) of the seven segment o/ps  a,b,c,d,e,f and g for different combinations of BCD inputs D,C,B and A, when the controlling input LT,BI/RBO and RBI all are inactive,i.e High..</li>
+                                <li class="expt1">	Generate table 2 to  show the precedence of controlling inputs LT,BI/RBO and RBI..</li>
+                                <li class="expt1">	Write your observations on blanking of leading zeros in case of multiple (here, three) digit display.</li>
+                                <li class="expt1">	 Note:- RBI of the leftmost decoder DEC1= 0
+(a)	Select DCBA of Dec1 to be zero(0000) while DCBA of  Dec2 (the middle decoder) and Dec3 (the rightmost decoder) to the nonzero ,i.e any combination from 0001 to 1001.
+(b)	Select DCBA=0000 for Dec1 as well as Dec2 while for Dec3, select DCBA to be of any combination between 0001 to  1001.
+(c)	Select DCBA=0000 for all the three decoders Dec1,Dec2 and Dec3.
+(d)	Select DCBA nonzero for all the three decoders Dec 1,dec2 & Dec3,
+Note:- Record the states of the three displays for all the above four cases.
+</li>
+                                
+                                
+                               
+                            
+                            </ol></p>                            
+                        </div>
+                    </section>
+                    
+                    <!-------------------------- Fifth section of the article---------------------------------------->
+<section id="experiment-article-section-4">
+                        <div class="icon" id="experiment-article-section-4-icon">
+                            <!-- Enclose the icon image of your lab.-->
+                            <img src="simulation.jpg"></div>
+
+                        <div class="heading" id="experiment-article-section-4-heading">
+                            Simulator</div>
+                        
+
+                        <table width="100%" cellpadding="0px" cellspacing="0px" border="0px">
+                                
+                                	<!--<tr height="30px">
+                                    	<td colspan="2" valign="top"><p class="medium_black">Results Tabulation</p></td>
+                                    </tr> -->
+                                
+                                	<tr height="30px">
+                                    	<td align="left" style="padding-left:35px;">
+                                        	
+                                        </td>
+                                        <td align="right" valign="middle" style="padding-right:35px;">
+                                        <div id="help1">
+                                        	<img src="images/help.jpg" width="30px" style="cursor:pointer;" title="Help" onClick="window.open('content/help.html','helpWindow','width=545,height=395,screenX=300,screenY=120')" />Help
+                                             </div>
+                                             
+                                              <div id="help2" style="display:none">
+                                        	<img src="images/help.jpg" width="30px" style="cursor:pointer;" title="Help" onClick="window.open('content/help1.html','helpWindow','width=887,height=590,screenX=300,screenY=120')" />Help
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    
+                                    <tr height="15px"><td colspan="2"></td></tr>
+                                                     
+                                	<tr height="30px">
+                                    
+                                    	<td align="left" style="padding-left:35px;">
+                                        	<input type="button" name="part1" value="Part 1" class="btn_sub1" onclick="showDiv('1');" />
+                                            &nbsp;&nbsp;
+                                        	<input type="button" name="part2" value="Part 2" class="btn_sub1" onclick="showDiv('2');" />
+                                        </td>
+                                        <td align="right" valign="middle" style="padding-right:35px;">
+                                        </td>
+                                        
+                                    </tr>
+                                                              
+                                </table>
+<div align="center" id="part1Div">
+                        
+                        <div align="center"><p class="faqs">Part 1 of the Experiment</p></div>
+                        <br><a href="exp1a/d.html" target="_blank">Click here for the javascript simulator</a> 
+                          <!--<object width="550" height="400">
+                              <param name="movie" value="expt1.swf">
+                              <embed src="expt1.swf" width="550" height="400">
+                              </embed>
+                          </object>-->
+						  <!--<object width="800" height="820">
+							  <param name="movie" value="content/expt1.swf">
+							  <embed src="content/expt1.swf" width="800" height="820">
+							  </embed>
+                          </object>-->
+
+				<object width="773.1" height="535.1">
+                              <param name="movie" value="content/expt1.swf">
+                              <embed src="content/expt1.swf" width="773.1" height="535.1">
+                              </embed>
+                          </object>				
+
+                         
+                        </div>  
+                        
+                    	<div align="center" id="part2Div" style="display:none;">
+                        
+                         <div align="center"><p class="faqs">Part 2 of the Experiment</p></div>
+                         <br><a href="exp1b/expb final/expjq.html" target="_blank">Click here for the javascript simulator</a>
+                         <object width="800" height="820">
+                              <param name="movie" value="content/expt2.swf">
+                              <embed src="content/expt2.swf" width="800" height="820">
+                              </embed>
+                          </object>
+                         
+                        </div>  
+                    </section>
+                    
+
+                    <!-------------------------- Sixth section of the article---------------------------------------->
+
+                 
+                    <!-------------------------- Seventh section of the article---------------------------------------->
+
+                    <section id="experiment-article-section-7">
+                        <div class="icon" id="experiment-article-section-7-icon">
+                            <!-- Enclose the icon image of your lab.-->
+                            <img src="images/quizzes.jpg"></div>
+
+                        <div class="heading" id="experiment-article-section-7-heading">
+                            Quizzes
+                        </div>
+
+                        <div class="content" id="experiment-article-section-5-content">                            
+                            <div id="vlab-quiz-wrapper">
+                                <p style="text-align:left; font-size:18px; font-weight:bold;">Test Your Knowledge!!</p><br/>
+                                <div id="vlab-quiz-question-answer-options"></div>                                
+                                <br/>
+                                <div id="vlab-quiz-trigger">
+                                    <button id="vqt-start" onclick="quizInitializeAllQuestion()" style="display: block;">Start</button>                                  
+                                </div>            
+                            </div>                      
+                        </div>
+                    </section>
+                    <!-------------------------- Eight section of the article---------------------------------------->
+
+                    <section id="experiment-article-section-8">
+                        <div class="icon" id="experiment-article-section-8-icon">
+                            <!-- Enclose the icon image of your lab.-->
+                            <img src="images/reference.jpg"></div>
+
+                        <div class="heading" id="experiment-article-section-8-heading">
+                            Reference
+                        </div>
+
+                        <div class="content" id="experiment-article-section-8-content">                            
+                            
+                           <p style="text-align:left; font-size:18px; font-weight:bold;">Books</p>
+				
+				<ul>
+                                <li>Digital Principles and Applications, by Leach and Malvino.</li>
+                                <li>Digital Logic Design, Leach, by Malvino, and Saha</li>
+                                <li>Engineering Digital Design, by Richard F. Tinder.</li>
+                                <li>Digital Logic and Computer Design, by M. Morris Mano</li>                                
+                            	<li>Digital Systems: Principles and Applications, Neal S. Widmer , Ronald J. Tocci , Gregory L. Moss</li>
+</ul>
+                        </div>
+                    </section>                   
+
+                </div>
+            </article>
+		<footer class="default" id="lab-footer">
+				<!-- Put the content here-->
+				<div style="margin-left:40%; margin-right:40% ">
+				    Copyright &copy; 2011 Indian Institute of Technology Kharagpur,<a href="../license/index.html" target="_blank" style="margin:auto"> Licensing Terms </a>
+				</div>
+			    </footer>
+        </div>
+    </body>
+</html>
