@@ -2,12 +2,12 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "what displays is used in Portable digital devices, such as watches or solar-powered calculators??",
+      "question": "This is a Sample Question 1?",
       "answers": {
-        "a": "Incandescent",
-        "b": "LCD (liquid-crystal display)",
-        "c": "LED (light-emitting diode)",
-        "d": "Vacuum fluorescent"
+        "a": "answer1",
+        "b": "answer2",
+        "c": "answer3",
+        "d": "answer4"
       },
       "explanations": {
         "a": "Explanation 1  <a href='www.google.com'>here</a>",
@@ -15,16 +15,16 @@
         "c": "Explanation 2",
         "d": "Explanation 2"
       },
-      "correctAnswer": "b",
+      "correctAnswer": "a",
       "difficulty": "beginner"
     },
     {
-      "question": "Which input is/are true input into the 7447 decoder IC is causing the 7-segment LED display to read decimal numbers?",
+      "question": "This is a Sample Question 2?",
       "answers": {
-        "a": "1001, 9",
-        "b": "0011, 3",
-        "c": "0001, 1",
-        "d": "All of the above are correct"
+        "a": "answer1",
+        "b": "answer2",
+        "c": "answer3",
+        "d": "answer4"
       },
       "explanations": {
         "a": "Explanation 1  <a href='www.google.com'>here</a>",
@@ -32,7 +32,7 @@
         "c": "Explanation 2",
         "d": "Explanation 2"
       },
-      "correctAnswer": "d",
+      "correctAnswer": "c",
       "difficulty": "beginner"
     }
   ]
