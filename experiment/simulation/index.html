@@ -1,27 +1,110 @@
-<!DOCTYPE html> 
-<html> 
-<head> 
-	<!-- Add CSS at the head of HTML file -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Add CSS at the head of HTML file -->
    <link rel="stylesheet" href="./css/main.css">
+<style>
+body {font-family: Arial;}
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+</style>
 </head>
-<body> 
-		<!-- Your code goes here-->
-		
-		<div align="center" id="part1Div">
-                        
-			<div align="center"><p class="faqs">Part 1 of the Experiment</p></div>
-			<br><a href="exp1a.html" target="_blank">Click here for the javascript simulator</a> 
+<body>
 
-		</div>  
-			
-			<div align="center" id="part2Div">
-			
-			 <div align="center"><p class="faqs">Part 2 of the Experiment</p></div>
-			 <br><a href="exp1b.html" target="_blank">Click here for the javascript simulator</a>
-			 
-			</div>  
 
-	<!-- Add JS at the bottom of HTML file --> 
+<p>Click on the Exp1/Exp2:</p>
+
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'London')">Exp1</button>
+  <button class="tablinks" onclick="openCity(event, 'Paris')">Exp2</button>
+  
+</div>
+
+<div id="London" class="tabcontent">
+  <h3>Part 1 of the Experiment</h3>
+  
+  <div class="content" id="experiment-article-section-3-content">
+                            <div class="center">
+ 						      <iframe id="heat"
+								title="heatexch"
+								width="900"
+								height="750"
+								src="exp1a.html">
+							  </iframe>
+                            </div>
+                        </div>
+</div>
+
+<div id="Paris" class="tabcontent">
+  <h3>Part 2 of the Experiment</h3>
+  
+<div class="content" id="experiment-article-section-3-content">
+                            <div class="center">
+ 						      <iframe id="heat"
+								title="heatexch"
+								width="900"
+								height="750"
+								src="exp1b.html">
+							  </iframe>
+                            </div>
+                        </div>  
+</div>
+
+
+
+<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+</script>
+<!-- Add JS at the bottom of HTML file --> 
         <script src="./js/main.js"></script>
+   
 </body>
 </html> 
