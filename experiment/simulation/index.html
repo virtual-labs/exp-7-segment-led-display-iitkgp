@@ -1,115 +1,116 @@
-<!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-	<title>Test: Practice</title>
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/virtual-labs/virtual-style@0.0.8-b/css/style.min.css">
-	<link rel="stylesheet" href="css/main.css">
 <style>
-body {font-family: Arial;}
-
-/* Style the tab */
-.tab {
-  overflow: hidden;
-  border: 1px solid #ccc;
-  background-color: #f1f1f1;
+#img1{
+	height:70%;
+	width:78%;
+	position: absolute;
+    top: 17%;
+    left: 9%;
+}
+#i8 {
+	height:36%;
+	width:22%;
+	position: absolute;
+	bottom: 33%;
+    left: 52%;
+}
+#i1{
+	height:4%;
+	width:4%;
+	position: absolute;
+    bottom: 64%;
+    right: 79%;
+}
+#i2{
+	height:4%;
+	width:4%;
+	position: absolute;
+    bottom: 58.5%;
+    right: 79%;
+}
+#i3{
+	height:4%;
+	width:4%;
+	position: absolute;
+    bottom: 53%;
+    right: 79%;
+}
+#i4{
+	height:4%;
+	width:4%;
+	position: absolute;
+    bottom: 47%;
+    right: 78.8%;
+}
+#i5{
+	height:4%;
+	width:4%;
+	position: absolute;
+    bottom: 41.5%;
+    right: 78.7%;
+}
+#i6{
+	height:4%;
+	width:4%;
+	position: absolute;
+    bottom: 36%;
+    right: 78.7%;
+}
+#i7{
+	height:4%;
+	width:4%;
+	position: absolute;
+    bottom: 31%;
+    right: 78.7%;
+} 
+.out{
+width:100%;
+height:100%;
+}
+.in{
+width:50%;
+height:70%;
+border: 1px solid #808080;
+position:relative;
+top:10%;
+left:25%;
 }
 
-/* Style the buttons inside the tab */
-.tab button {
-  background-color: inherit;
-  float: left;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  padding: 14px 16px;
-  transition: 0.3s;
-  font-size: 17px;
-}
-
-/* Change background color of buttons on hover */
-.tab button:hover {
-  background-color: #ddd;
-}
-
-/* Create an active/current tablink class */
-.tab button.active {
-  background-color: #ccc;
-}
-
-/* Style the tab content */
-.tabcontent {
-  display: none;
-  padding: 6px 12px;
-  border: 1px solid #ccc;
-  border-top: none;
-}
 </style>
+<script type="text/javascript" src="js/c.js">
+</script>
 </head>
 <body>
+<div class="out">
+<div class="in">
+<img src="images/exp1.jpg" id="img1">
+<img src="images/img3.jpg" id="i8">
+<img id="i6" onclick="a6()" src="images/off.png">
+<img id="i2" onclick="a2()" src="images/off.png">
+<img id="i1" onclick="a1()" src="images/off.png">
+<img id="i7" onclick="a7()" src="images/off.png">
+<img id="i3" onclick="a3()" src="images/off.png">
+<img id="i4" onclick="a4()" src="images/off.png">
+<img id="i5" onclick="a5()" src="images/off.png">
 
-
-<p>Click on the Exp1/Exp2:</p>
-
-<div class="tab">
-  <button class="tablinks" onclick="openCity(event, 'London')">Exp1</button>
-  <button class="tablinks" onclick="openCity(event, 'Paris')">Exp2</button>
-  
+<!--<img id="i1" onclick="a1()" src="images/off.png">
+<img id="i2" onclick="a2()" src="images/off.png">
+<img id="i3" onclick="a3()" src="images/off.png">
+<img id="i4" onclick="a4()" src="images/off.png">
+<img id="i5" onclick="a5()" src="images/off.png">
+<img id="i6" onclick="a6()" src="images/off.png">
+<img id="i7" onclick="a7()" src="images/off.png">-->
+<!-- <img src="d.jpg" id="d" height="530px"> -->
+<!-- <img src="img2.jpg" id="img2" height="400px"> -->
+<!--<div class="right">
+<p><b><u>
+Instruction</u> : </b>
+1. First switch on BI(blanking input)/RBI(ripple blanking input).
+2. 
+</p>
+</div>-->
 </div>
-
-<div id="London" class="tabcontent">
-  <h3>Part 1 of the Experiment</h3>
-  
-  <div class="content" id="experiment-article-section-3-content">
-                            <div class="center">
- 						      <iframe id="heat"
-								title="heatexch"
-								width="900"
-								height="750"
-								src="exp1a.html">
-							  </iframe>
-                            </div>
-                        </div>
 </div>
-
-<div id="Paris" class="tabcontent">
-  <h3>Part 2 of the Experiment</h3>
-  
-<div class="content" id="experiment-article-section-3-content">
-                            <div class="center">
- 						      <iframe id="heat"
-								title="heatexch"
-								width="900"
-								height="750"
-								src="exp1b.html">
-							  </iframe>
-                            </div>
-                        </div>  
-</div>
-
-
-
-<script>
-function openCity(evt, cityName) {
-  var i, tabcontent, tablinks;
-  tabcontent = document.getElementsByClassName("tabcontent");
-  for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].style.display = "none";
-  }
-  tablinks = document.getElementsByClassName("tablinks");
-  for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace(" active", "");
-  }
-  document.getElementById(cityName).style.display = "block";
-  evt.currentTarget.className += " active";
-}
-</script>
-<script src="js/jsplumb.bundle.js"></script>
-	<script src="https://cdn.jsdelivr.net/gh/virtual-labs/virtual-style@0.0.8-b/js/script.js"></script>
-	<script type="module" src="js/main.js"></script>
-   
 </body>
-</html> 
+</html>
