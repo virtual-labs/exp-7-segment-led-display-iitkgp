@@ -1,56 +1,108 @@
 <html>
 <head>
-  <title>experiment two</title>
-  <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-  <script src="js/jq.js"></script>
-  <style>
-	.out{
-		width:100%;
-		height:100%;
-	}
-	.in{
-		width:65%;
-		height:90%;
-		border: 1px solid #808080;
-		position:relative;
-		top:5%;
-		left:18%;
-	}
+<style>
+#img1{
+	height:70%;
+	width:78%;
+	position: absolute;
+    top: 17%;
+    left: 9%;
+}
+#i8 {
+	height:36%;
+	width:22%;
+	position: absolute;
+	bottom: 33%;
+    left: 52%;
+}
+#i1{
+	height:4%;
+	width:4%;
+	position: absolute;
+    bottom: 64%;
+    right: 79%;
+}
+#i2{
+	height:4%;
+	width:4%;
+	position: absolute;
+    bottom: 58.5%;
+    right: 79%;
+}
+#i3{
+	height:4%;
+	width:4%;
+	position: absolute;
+    bottom: 53%;
+    right: 79%;
+}
+#i4{
+	height:4%;
+	width:4%;
+	position: absolute;
+    bottom: 47%;
+    right: 78.8%;
+}
+#i5{
+	height:4%;
+	width:4%;
+	position: absolute;
+    bottom: 41.5%;
+    right: 78.7%;
+}
+#i6{
+	height:4%;
+	width:4%;
+	position: absolute;
+    bottom: 36%;
+    right: 78.7%;
+}
+#i7{
+	height:4%;
+	width:4%;
+	position: absolute;
+    bottom: 31%;
+    right: 78.7%;
+} 
+.out{
+width:100%;
+height:100%;
+}
+.in{
+width:50%;
+height:70%;
+border: 1px solid #808080;
+position:relative;
+top:10%;
+left:25%;
+}
 
 </style>
+<script type="text/javascript" src="js/c.js">
+</script>
 </head>
 <body>
-	<div class="out">
-		<div class="in">
-			
-			
-			<img src="images/default.jpg" id="q1"  style="height:23%; width:10%; position:absolute; top:2%; left:33%">
-			<img src="images/default.jpg" id="q2"  style="height:23%; width:10%; position:absolute; top:2%; left:44%">
-			<img src="images/default.jpg" id="q3"  style="height:23%; width:10%; position:absolute; top:2%; left:55%">
-			<img src="images/exp2.jpg" id="circ" style="height:67%; width:93.2%; position:absolute; top:25%; left:5%">
-			
-			<img src="images/red.jpg" id="a1" class="gp1" 	imgValue="0" style="height:8%; width:3%; position:absolute; top:78%; left:10.5%">
-			<img src="images/red.jpg" id="b1" class="gp1"   imgValue="8" style="height:8%; width:3%; position:absolute; top:78%; left:13.4%">
-			<img src="images/red.jpg" id="c1" class="gp1"   imgValue="4" style="height:8%; width:3%; position:absolute; top:78%; left:16.3%">
-			<img src="images/red.jpg" id="d1" class="gp1"   imgValue="2" style="height:8%; width:3%; position:absolute; top:78%; left:19%">
-			<img src="images/red.jpg" id="e1" class="gp1"   imgValue="1" style="height:8%; width:3%; position:absolute; top:78%; left:21.9%">
-			<img src="images/green.jpg" id="f1" class="gp1" imgValue="0"  style="height:8%; width:3%; position:absolute; top:78%; left:24.6%">	
-			
-			
-			<img src="images/red.jpg" id="g1" class="gp2"   imgValue="8" style="height:8%; width:3%; position:absolute; top:78%; left:41.3%">
-			<img src="images/red.jpg" id="h1" class="gp2"   imgValue="4" style="height:8%; width:3%; position:absolute; top:78%; left:44.6%">
-			<img src="images/red.jpg" id="i1" class="gp2"   imgValue="2" style="height:8%; width:3%; position:absolute; top:78%; left:47.3%">
-			<img src="images/red.jpg" id="j1" class="gp2"   imgValue="1" style="height:8%; width:3%; position:absolute; top:78%; left:50%">
-			<img src="images/green.jpg" id="k1" class="gp2" imgValue="0" style="height:8%; width:3%; position:absolute; top:78%; left:52.7%">
-			
-			
-			<img src="images/red.jpg" id="l1" class="gp3"   imgValue="8" style="height:8%; width:3%; position:absolute; top:78%; left:69.8%">
-			<img src="images/red.jpg" id="m1" class="gp3"   imgValue="4" style="height:8%; width:3%; position:absolute; top:78%; left:72.8%">
-			<img src="images/red.jpg" id="n1" class="gp3"   imgValue="2" style="height:8%; width:3%; position:absolute; top:78%; left:75.5%">
-			<img src="images/red.jpg" id="o1" class="gp3"   imgValue="1" style="height:8%; width:3%; position:absolute; top:78%; left:78.3%">
-			<img src="images/green.jpg" id="p1" class="gp3" imgValue="0" style="height:8%; width:3%; position:absolute; top:78%; left:81%">
-		</div>
-	</div>
-
+<div class="out">
+<div class="in">
+<img src="images/exp1.jpg" id="img1">
+<img src="images/img3.jpg" id="i8">
+<img id="i1" onclick="a1()" src="images/off.png">
+<img id="i2" onclick="a2()" src="images/off.png">
+<img id="i3" onclick="a3()" src="images/off.png">
+<img id="i4" onclick="a4()" src="images/off.png">
+<img id="i5" onclick="a5()" src="images/off.png">
+<img id="i6" onclick="a6()" src="images/off.png">
+<img id="i7" onclick="a7()" src="images/off.png">
+<!-- <img src="d.jpg" id="d" height="530px"> -->
+<!-- <img src="img2.jpg" id="img2" height="400px"> -->
+<!--<div class="right">
+<p><b><u>
+Instruction</u> : </b>
+1. First switch on BI(blanking input)/RBI(ripple blanking input).
+2. 
+</p>
+</div>-->
+</div>
+</div>
 </body>
 </html>
