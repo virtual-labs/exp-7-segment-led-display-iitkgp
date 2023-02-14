@@ -2,12 +2,12 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "This is a Sample Question 1?",
+      "question": "Which electronic circuit used to convert the decimal input of a calculator to the BCD code used by the internal circuits or central processing unit?",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "Flip-flop",
+        "b": "Encoder",
+        "c": "Multiplexer",
+        "d": "Assembler"
       },
       "explanations": {
         "a": "Explanation 1  <a href='www.google.com'>here</a>",
@@ -15,16 +15,16 @@
         "c": "Explanation 2",
         "d": "Explanation 2"
       },
-      "correctAnswer": "a",
+      "correctAnswer": "b",
       "difficulty": "beginner"
     },
     {
-      "question": "This is a Sample Question 2?",
+      "question": "By which square-wave signal a segment of a LCD display is said to be driven or activated?",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "DC",
+        "b": "Out-of-phase",
+        "c": "In-phase",
+        "d": "PCMCIA"
       },
       "explanations": {
         "a": "Explanation 1  <a href='www.google.com'>here</a>",
@@ -32,7 +32,24 @@
         "c": "Explanation 2",
         "d": "Explanation 2"
       },
-      "correctAnswer": "c",
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": " which type display uses older vacuum tube technology?",
+      "answers": {
+        "a": "LCD",
+        "b": "VF",
+        "c": "LED",
+        "d": "ALL of the above"
+      },
+      "explanations": {
+        "a": "Explanation 1  <a href='www.google.com'>here</a>",
+        "b": "Explanation 2",
+        "c": "Explanation 2",
+        "d": "Explanation 2"
+      },
+      "correctAnswer": "b",
       "difficulty": "beginner"
     }
   ]
