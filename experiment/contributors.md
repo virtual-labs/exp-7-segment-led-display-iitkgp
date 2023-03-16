@@ -3,7 +3,7 @@
 ## People
 
 
-### Subject Matter Experts
+#### Subject Matter Experts
 <b>Name of Developer | <b> **Prof. Gautam Saha**
 :--|:--|
 <b> Institute | <b>  **Indian Institute of Technology Kharagpur**
@@ -25,7 +25,7 @@
 <b> Department |  **Electronics & Electrical Communication Engineering**
 
 
-### Contributors List
+#### Contributors List
 
 SrNo | Name | VLabs Developer or Integration Engineer | Designation | Department| Institute
 :--|:--|:--|:--|:--|:--|
