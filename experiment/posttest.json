@@ -9,7 +9,7 @@
         "c": "Multiplexer",
         "d": "Assembler"
       },
-      
+
       "correctAnswer": "b",
       "difficulty": "beginner"
     },
@@ -33,7 +33,7 @@
         "c": "LED",
         "d": "ALL of the above"
       },
-      
+
       "correctAnswer": "b",
       "difficulty": "beginner"
     }
